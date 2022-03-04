@@ -34,6 +34,7 @@ namespace Dojo.Tests
             Assert.False(Solution.CanAddUp(new [] {6, 0}, 4));
         }
 
+        [Fact]
         public void ListNotContainingAnyValuesShouldReturnFalse()
         {
             Assert.False(Solution.CanAddUp(System.Array.Empty<int>(), 4));
