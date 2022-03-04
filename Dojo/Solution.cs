@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Dojo
+﻿namespace Dojo
 {
     public static class Solution
     {
