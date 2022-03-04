@@ -14,6 +14,7 @@ namespace Dojo.Tests
         public void ListContainingZerosShouldReturnTrueWhenFindingZero()
         {
             Assert.True(Solution.CanAddUp(new[] {0,0}, 0));
+            
         }
         [Fact]
         public void ListContainingSumShouldReturnTrueWhenFindingPositiveNumber()
@@ -25,6 +26,12 @@ namespace Dojo.Tests
         public void ListNotContainingSumShouldReturnFalse()
         {
             Assert.False(Solution.CanAddUp(new [] {0, 0}, 4));
+        }
+
+         [Fact]
+        public void ListNotContainingSumof6and0ShouldReturnFalse()
+        {
+            Assert.False(Solution.CanAddUp(new [] {6, 0}, 4));
         }
     }
 }
