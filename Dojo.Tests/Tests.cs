@@ -29,9 +29,14 @@ namespace Dojo.Tests
         }
 
          [Fact]
-        public void ListNotContainingSumof6and0ShouldReturnFalse()
+        public void ListNotContainingSumOf6and0ShouldReturnFalse()
         {
             Assert.False(Solution.CanAddUp(new [] {6, 0}, 4));
         }
+
+        public void ListNotContainingAnyValuesShouldReturnFalse()
+        {
+            Assert.False(Solution.CanAddUp(System.Array.Empty<int>(), 4));
+        } 
     }
 }

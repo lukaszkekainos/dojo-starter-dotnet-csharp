@@ -6,9 +6,16 @@
 
         public static bool CanAddUp(int[] values, int searchedValue)
         {
-            if(values[0] == 0 && searchedValue == 4)
+            var lengthOfTheValues = values.Length;
+            for (var i = 0; i < lengthOfTheValues - 1; i++)
+            {
+                for (var j = i + 1; j < lengthOfTheValues; j++)
+                {
+                    if (values[i] + values[j] == searchedValue)
+                        return true;
+                }
+            }
             return false;
-            return true;
         }
     }
 }
