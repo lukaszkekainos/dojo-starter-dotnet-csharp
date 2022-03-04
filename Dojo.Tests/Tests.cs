@@ -39,5 +39,11 @@ namespace Dojo.Tests
         {
             Assert.False(Solution.CanAddUp(System.Array.Empty<int>(), 4));
         } 
+
+        [Fact]
+        public void ListContainingSumShouldReturnTrue()
+        {
+            Assert.True(Solution.CanAddUp(new [] {4, 0}, 4));
+        } 
     }
 }
